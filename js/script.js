@@ -58,7 +58,7 @@ class Calendar
                     ←
                    </div>
                    <div class="date">
-                    ${this.#monthNames[this.#month]}
+                    ${this.#monthNames[this.#month]} ${this.#year}
                    </div>
                    <div class="arrow next">
                     →
