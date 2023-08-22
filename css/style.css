@@ -1,0 +1,73 @@
+.calendar {
+    max-width: 440px;
+    color: #7E7E7E;
+    font-size: 16px;
+}
+
+.calendar__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #F5F5F5;
+}
+
+.calendar__week {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[7];
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__week span {
+    text-align: center;
+}
+
+.calendar__days {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar__days span {
+    padding: 15px 5px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.calendar .arrow {
+    color: #000000;
+    cursor: pointer;
+}
+
+.calendar .curr-day {
+    cursor: pointer;
+}
+
+.calendar .curr-day:hover {
+    background-color: #FF730F;
+    color: white;
+}
+
+.calendar .curr-day.selected {
+    background-color: #FF730F;
+    color: white;
+}
+
+.calendar .prev-day {
+    background-color: white;
+}
+
+.calendar .next-day {
+    background-color: white;
+}

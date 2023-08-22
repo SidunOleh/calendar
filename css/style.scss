@@ -1,0 +1,57 @@
+.calendar {
+    max-width: 440px;
+    color: #7E7E7E;
+    font-size: 16px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #F5F5F5;
+    }
+    &__week {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        span {
+            text-align: center;
+        }
+    }
+    &__days {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        span {
+            padding: 15px 5px;
+            text-align: center;
+            background-color: #F5F5F5;
+        }
+    }
+    .arrow {
+        color: #000000;
+        cursor: pointer;
+    }
+    .prev {}
+    .date {}
+    .month {}
+    .year {}
+    .next {}
+    .curr-day {
+        cursor: pointer;
+        &:hover {
+            background-color: #FF730F;
+            color: white;
+        }
+        &.selected {
+            background-color: #FF730F;
+            color: white;
+        }
+    }
+    .prev-day {
+        background-color: white;
+    }
+    .next-day {
+        background-color: white;
+    }
+}
